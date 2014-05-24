@@ -12,7 +12,7 @@
     $basliklar[]="Merhaba Dünya, Al sana sıradan bir Türkçe Başlık";
     $basliklar[]="'Tırnak'lı başlık olur mu demeyin, belli olmaz";
     $basliklar[]="BÜYÜK HARF MANYAĞI BİR BAŞLIK, OLUR MU OLUR";
-    $basliklar[]="Bol karakterli!!! @^+~ bir başlık lütfen";
+    $basliklar[]="Bol karakterli !?#@^+~ bir başlık lütfen";
     
     foreach($basliklar as $baslik)
       echo  seoFriendlyUrl($baslik)."<br/>";
