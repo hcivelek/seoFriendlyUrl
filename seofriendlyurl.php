@@ -3,10 +3,10 @@
     function seoFriendlyUrl($string)
     {
 	setlocale(LC_CTYPE, 'en_US.UTF8');
-	$string = iconv('UTF-8', 'ASCII//TRANSLIT//IGNORE', trim($string));
- 	$string = str_replace(' ', '-', $string); // Replaces all spaces with hyphens. 		
-	$string=strtolower(preg_replace('/[^A-Za-z0-9\-]/', '', $string)); // Removes special chars.
-	return preg_replace('/[-]+/','-',$string);	    
+	$string = iconv('UTF-8', 'ASCII//TRANSLIT//IGNORE', trim($string));//Dile mahsus karakterleri ascii genel karakterlerine cevirir
+ 	$string = str_replace(' ', '-', $string); // boşlukları orta tire (-) karakterine çevirir 		
+	$string=strtolower(preg_replace('/[^A-Za-z0-9\-]/', '', $string)); // a-z, A-Z ve 0-9 dışındaki tüm karakterleri uçurur ve neticeyi küçük harfe çevirir
+	return preg_replace('/[-]+/','-',$string); //birden fazla orta tire (-) oluşmussa onları teke indirir
     }
     
     $basliklar[]="Merhaba Dünya, Al sana sıradan bir Türkçe Başlık";
