@@ -13,4 +13,6 @@ Bu fonksiyon içerisinde Türkçe özel karakterler ve noktalama işaretleri bul
 
 Çıktısı;
 
+```php
 merhaba-dunya-turkcenin-azizligine-ne-cok-rastliyoruz-degil-mi
+```
