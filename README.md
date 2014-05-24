@@ -7,7 +7,9 @@ Bu fonksiyon içerisinde Türkçe özel karakterler ve noktalama işaretleri bul
 
 Örnek Kullanım;
 
+```php
 <?php echo seoFriendlyUrl("Merhaba Dünya! Türkçe'nin azizliğine ne çok rastlıyoruz, değil mi?"); ?>
+```
 
 Çıktısı;
 
